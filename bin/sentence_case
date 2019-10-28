@@ -2,47 +2,73 @@
 
 
 /**
- * redirects
- * article titles (h1 headers)
  * directory names
  * links
  */
 
 const fs = require('fs');
-const join = require('path').join
+const join = require('path').join;
 const wikiPath = join(__dirname, '..', 'wiki');
 const redirectsPath = join(wikiPath, 'redirect.yaml');
 
+let articles = [];
 let redirects = fs.readFileSync(redirectsPath, 'utf8');
-const newRedirects = [];
 
 for (const articleEntry in Object.entries(articleInfo()).sort(sortArticles)) {
+    const lastSlashIndex = articleEntry[0].lastIndexOf('/');
     const article = {
-        oldPath: articleEntry[0],
-        newPath: articleEntry[1].length === 2 ? articleEntry[1][1] : articleEntry[1][0].replace(/ /g, '_'),
+        parentPath: articleEntry[0].substring(0, lastSlashIndex),
+        oldDirname: articleEntry[0].substring(lastSlashIndex + 1),
+        newDirname: articleEntry[1].length === 2
+            ? articleEntry[1][1]
+            : articleEntry[1][0].replace(/ /g, '_'),
         newTitle: articleEntry[1][0]
     };
+    article.oldPath = join(article.parentPath, article.oldDirname);
+    article.newPath = join(article.parentPath, article.newDirname);
+
+    articles.push(article);
 
     fixRedirects(article);
+    fixArticleTitle(article);
 }
 
-if (newRedirects.length > 0)
-    redirects += `\n# Moved in TODO\n${newRedirects.join('\n')}\n`;
-
+fixArticleReferences(articles);
 fs.writeFileSync(redirectsPath, redirects);
 
-// ---
+////////////////////////////////////////////////////////////////////////////////
 
 function sortArticles(entry1, entry2) {
     return (entry1[0].match(/\//g) || []).length
          - (entry2[0].match(/\//g) || []).length;
 }
 
-function fixRedirects(article) {
-    redirects = redirects.replace(RegExp(`"${article.oldPath}"$`, 'gm'), article.newPath);
+function articleFilePath(path) {
+    return join(wikiPath, path, 'en.md');
+}
 
-    if (article.oldPath.toLowerCase() !== article.newPath.toLowerCase())
-        newRedirects.push(`"${article.oldPath.toLowerCase()}": "${article.newPath}"`);
+function runOnTree(base, filename, func) {
+    fs.readdirSync(base, { withFileTypes: true })
+}
+
+function fixRedirects(article) {
+    if (article.oldDirname.toLowerCase() !== article.newDirname.toLowerCase()) {
+        console.error(`Tried to rename ${article.oldDirname} to ${article.newDirname}`);
+        process.exit(1);
+    }
+
+    redirects = redirects.replace(RegExp(`${article.oldDirname}"\n`, 'g'), article.newDirname);
+}
+
+function fixArticleTitle(article) {
+    const contents = fs.readFileSync(articleFilePath(article.oldPath));
+    contents.replace(/(?:^|---)[\s\n]+# (.+)/, (match, oldTitle) => match.replace(oldTitle, article.newTitle));
+
+    fs.writeFileSync(articleFilePath(article.oldPath), contents);
+}
+
+function fixArticleReferences(articles) {
+    fs.readdir()
 }
 
 function articleInfo() {
