@@ -1,11 +1,6 @@
 #!/usr/bin/env node
 
-
-/**
- * directory names
- * links
- */
-
+const exec = require('child_process').exec;
 const fs = require('fs');
 const join = require('path').join;
 const wikiPath = join(__dirname, '..', 'wiki');
@@ -24,16 +19,19 @@ for (const articleEntry in Object.entries(articleInfo()).sort(sortArticles)) {
             : articleEntry[1][0].replace(/ /g, '_'),
         newTitle: articleEntry[1][0]
     };
-    article.oldPath = join(article.parentPath, article.oldDirname);
-    article.newPath = join(article.parentPath, article.newDirname);
+    article.oldPath = article.parentPath + '/' + article.oldDirname;
+    article.newPath = article.parentPath + '/' + article.newDirname;
 
     articles.push(article);
 
     fixRedirects(article);
     fixArticleTitle(article);
+    fixDirName(article);
+
+    // fix article path
 }
 
-fixArticleReferences(articles);
+//fixArticleReferences(articles);
 fs.writeFileSync(redirectsPath, redirects);
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -47,8 +45,12 @@ function articleFilePath(path) {
     return join(wikiPath, path, 'en.md');
 }
 
-function runOnTree(base, filename, func) {
-    fs.readdirSync(base, { withFileTypes: true })
+function callOnTreeContents(base, extension, func) {
+    for (let file of fs.readdirSync(base, { withFileTypes: true }))
+        if (file.isDirectory())
+            callOnTreeContents(file.name, extension, func);
+        else if (file.name.endsWith(extension))
+            func(fs.readFileSync(file.name, 'utf8'));
 }
 
 function fixRedirects(article) {
@@ -57,7 +59,7 @@ function fixRedirects(article) {
         process.exit(1);
     }
 
-    redirects = redirects.replace(RegExp(`${article.oldDirname}"\n`, 'g'), article.newDirname);
+    redirects = redirects.replace(RegExp(`${article.oldDirname}"\\n`, 'g'), article.newDirname + '"\n');
 }
 
 function fixArticleTitle(article) {
@@ -67,8 +69,15 @@ function fixArticleTitle(article) {
     fs.writeFileSync(articleFilePath(article.oldPath), contents);
 }
 
+function fixDirName(article) {
+    exec(`mv ${join(wikiPath, article.oldPath)} ${join(wikiPath, article.newPath)}`);
+}
+
 function fixArticleReferences(articles) {
-    fs.readdir()
+    callOnTreeContents(wikiPath, '.md', contents => {
+        for (let article of articles)
+            contents.replace(RegExp(`\\]\\(\\/wiki\\/${article.oldPath}(\\/\\S+)\\/?\\)`, 'gi'), `](/wiki/${article.newPath}$1)`);
+    });
 }
 
 function articleInfo() {
