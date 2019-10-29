@@ -9,7 +9,7 @@ const redirectsPath = join(wikiPath, 'redirect.yaml');
 let articles = [];
 let redirects = fs.readFileSync(redirectsPath, 'utf8');
 
-for (const articleEntry in Object.entries(articleInfo()).sort(sortArticles)) {
+for (const articleEntry of Object.entries(articleInfo()).sort(sortArticles)) {
     const lastSlashIndex = articleEntry[0].lastIndexOf('/');
     const article = {
         parentPath: articleEntry[0].substring(0, lastSlashIndex),
@@ -46,7 +46,7 @@ function articleFilePath(path) {
 }
 
 function callOnTreeContents(base, extension, func) {
-    for (let file of fs.readdirSync(base, { withFileTypes: true }))
+    for (const file of fs.readdirSync(base, { withFileTypes: true }))
         if (file.isDirectory())
             callOnTreeContents(file.name, extension, func);
         else if (file.name.endsWith(extension))
@@ -63,7 +63,7 @@ function fixRedirects(article) {
 }
 
 function fixArticleTitle(article) {
-    const contents = fs.readFileSync(articleFilePath(article.oldPath));
+    const contents = fs.readFileSync(articleFilePath(article.oldPath), 'utf8');
     contents.replace(/(?:^|---)[\s\n]+# (.+)/, (match, oldTitle) => match.replace(oldTitle, article.newTitle));
 
     fs.writeFileSync(articleFilePath(article.oldPath), contents);
@@ -75,7 +75,7 @@ function fixDirName(article) {
 
 function fixArticleReferences(articles) {
     callOnTreeContents(wikiPath, '.md', contents => {
-        for (let article of articles)
+        for (const article of articles)
             contents.replace(RegExp(`\\]\\(\\/wiki\\/${article.oldPath}(\\/\\S+)\\/?\\)`, 'gi'), `](/wiki/${article.newPath}$1)`);
     });
 }
@@ -108,11 +108,11 @@ function articleInfo() {
         'Beatmaps/Title_Text': ['Title text'],
         Chat_Console: ['Chat console'],
         Contests: ['Contests'],
-        'Contests/FBC': ['FBC'],
+        /*'Contests/FBC': ['FBC'],
         'Contests/OMC': ['OMC'],
         'Contests/OMC/5': ['5'],
         'Contests/oMWC': ['oMWC'],
-        'Contests/oMWC/1': ['1'],
+        'Contests/oMWC/1': ['1'],*/
         Difficulties: ['Difficulties'],
         'Difficulties/Easy': ['Easy'],
         'Difficulties/Expert': ['Expert'],
@@ -129,7 +129,7 @@ function articleInfo() {
         'Disambiguation/Easy': ['Easy'],
         'Disambiguation/EZ': ['EZ'],
         'Disambiguation/Mod': ['Mod'],
-        Do_you_really_want_to_ask_peppy: ['Do you really want to ask peppy?'],
+        Do_you_really_want_to_ask_peppy: ['Do you really want to ask peppy?', 'Do_you_really_want_to_ask_peppy'],
         FAQ: ['FAQ'],
         Featured_Artists: ['Featured artists'],
         Game_Modes: ['Game modes'],
@@ -267,7 +267,6 @@ function articleInfo() {
         Projects: ['Projects'],
         Quality_Assurance_Team_Blog: ['Quality Assurance Team Blog'],
         Ranking_Criteria: ['Ranking criteria'],
-        'Ranking_Criteria/Code_of_Conduct': ['Code of conduct'],
         'Ranking_Criteria/Difficulty_Naming': ['Difficulty naming'],
         'Ranking_Criteria/osu!': ['osu!'],
         'Ranking_Criteria/osu!/Scaling_BPM': ['Scaling BPM'],
@@ -275,14 +274,15 @@ function articleInfo() {
         'Ranking_Criteria/osu!mania': ['osu!mania'],
         'Ranking_Criteria/osu!taiko': ['osu!taiko'],
         'Ranking_Criteria/Skin_Set_List': ['Skin set list'],
-        'Ranking_Criteria/Song_Content_Rules': ['Song content rules'],
         'Ranking_Criteria/Timing_Songs_With_8-Signatures': ['Timing songs with 8-signatures'],
-        'Ranking_Criteria/Visual_Content_Considerations': ['Visual content considerations'],
         Registration: ['Registration'],
         Replay: ['Replay'],
         Reporting_Bad_Behaviour: ['Reporting bad behaviour'],
         'Reporting_Bad_Behaviour/Handling_Foul_Play': ['Handling foul play'],
         Rules: ['Rules'],
+        'Rules/Code_of_Conduct_for_Modding_and_Mapping': ['Code of conduct for modding and mapping'],
+        'Rules/Song_Content_Rules': ['Song content rules'],
+        'Rules/Visual_Content_Considerations': ['Visual content considerations'],
         Score: ['Score'],
         'Score/ScoreV1': ['ScoreV1'],
         Shortcut_Key_Reference: ['Shortcut key reference'],
@@ -330,7 +330,7 @@ function articleInfo() {
         'Submission/Beatmap_Ranking_Procedure': ['Beatmap ranking procedure'],
         Tournament_Drawings: ['Tournament drawings'],
         Tournaments: ['Tournaments'],
-        'Tournaments/ANZT': ['ANZT'],
+        /*'Tournaments/ANZT': ['ANZT'],
         'Tournaments/ANZT/2018_Summer': ['2018 Summer'],
         'Tournaments/ANZT/2018_Winter': ['2018 Winter'],
         'Tournaments/ANZT/2019_Summer': ['2019 Summer'],
@@ -464,7 +464,7 @@ function articleInfo() {
         'Tournaments/TWC/2018': ['2018'],
         'Tournaments/TWC/2019': ['2019'],
         'Tournaments/Zotcade': ['Zotcade'],
-        'Tournaments/Zotcade/2019': ['2019'],
+        'Tournaments/Zotcade/2019': ['2019'],*/
         Twitter: ['Twitter'],
         Visual_Settings: ['Visual settings'],
         Welcome: ['Welcome']
