@@ -42,7 +42,7 @@ Ever wanted to see what popular maps looked like in earlier eras of the game? We
 
 The osu!dan project is a brand new community created project that seeks to provide a "campaign mode" to the game. Players will progress through levels of increasing difficulty in a skill of their choice, such as aim, stamina, accuracy, et cetera.
 
-Each of the dans will contain 20 levels of increasing difficulty. In order to complete a level, the player must reach the requirements on the maps presented, like reaching a certain accuracy threshold or attaining a full combo. For now, the release of dan levels is purely for fun, a way to practice, or test yourself, but a more official implementation is planned for the future. 😉
+Each of the dans will contain 20 levels of increasing difficulty. In order to complete a level, the player must reach the requirements on the maps presented, like reaching a certain accuracy threshold or attaining a full combo. For now, the release of dan levels is purely for fun, a way to practice, or test yourself, but a more official implementation is planned for the future. ;)
 
 The first of the dans is available to download now on the Beatmap Packs listing. The skill tested in this pack is aim and will surely push your circle clicking to the limits. The requirements for this dan are quite simple: you need to achieve full combo on 10 out of 11 maps in the dan to progress to the next one. Once again, this for now is just for your own practice, or to compare yourself with your friends - there is no implementation for keeping track of levels as for now.
 
