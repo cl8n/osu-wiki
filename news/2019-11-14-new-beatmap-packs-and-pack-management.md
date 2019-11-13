@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Introducing Beatmap Pack Management
+title: New Beatmap Packs and Pack Management
 date: 2019-11-14 14:00:00 +0000
 ---
 
-An update to the Beatmap Pack Management project, including new pack releases!
+Themed beatmap packs are back thanks to a new team's efforts. Read on to see what they've done so far and get a glimpse of what's to come!
 
 ![](/wiki/shared/news/banners/beatmap-packs.jpg)
 
