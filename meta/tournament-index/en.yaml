@@ -1,0 +1,28 @@
+title: Tournaments
+info: Section dedicated for osu! tournaments. Tournaments have their dedicated forum which can be found [through this link](https://osu.ppy.sh/community/forums/55).
+wc:
+  title: Official World Cups
+  info: Official tournaments hosted by the Tournament Management.
+  owc: osu! World Cup
+  twc: osu!taiko World Cup
+  cwc: osu!catch World Cup
+  mwc: osu!mania World Cup
+community:
+  title: Community
+  info: Unofficial tournaments/competitions hosted by the communities.
+crowns:
+  gold: Gold crown
+  silver: Silver crown
+  bronze: Bronze crown
+  first: 1st place
+  second: 2nd place
+  third: 3rd place
+table:
+  name: Name
+  start: Start
+  end: End
+  date: Date
+see_also:
+  title: See also
+  country_list: List of countries that participated in osu! tournaments
+  client_note: (Client used for tournament streaming)
