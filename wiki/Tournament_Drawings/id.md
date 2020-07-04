@@ -14,7 +14,7 @@ Buka osu!lazer dan tekan `Ctrl + O` untuk memperlihatkan pengaturan permainan. D
 `drawings.ini`  
 `drawings.txt`  
 Selanjutnya, tambahkan baris berikut ke file `drawings.txt`:  
-`AU : Australia : AUS`  
+`AU : Australia : AUS`
 
 Layar pengundian sekarang siap untuk dipratinjau. Pemahaman mengenai bagaimana tampilan layar pengundian beserta fungsi-fungsinya menjadi poin penting sebelum mulai memodifikasi masing-masing file ini lebih lanjut.
 

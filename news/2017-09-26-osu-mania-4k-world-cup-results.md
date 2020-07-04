@@ -71,10 +71,10 @@ The tiebreaker was fierce and unforgiving, and the atmosphere was electrifying. 
 
 ![](/wiki/shared/news/2017-09-26-osu-mania-4k-world-cup-results/BrazilUnitedStates_game1.jpg)
 
- And now we're down to the final two teams!
- 
- --------
- 
+And now we're down to the final two teams!
+
+--------
+
 **Week 2**
 
 **The final match of the tournament saw the rematch between the United States and South Korea.** After their convincing victory over the United States last week, coupled with the fact that they needed to lose twice, it was almost inevitable that South Korea would be crowned champion once more. The United States definitely gave it their all, but the rest as you know is history. Nevertheless, the final match of the tournament was still a visual spetacle - a satisfying conclusion to this breathtaking journey for sure.

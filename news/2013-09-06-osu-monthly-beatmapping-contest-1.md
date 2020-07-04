@@ -41,8 +41,7 @@ Calling all mappers! Come show off your mapping skills to the community with the
 
 # Translations
 
-Jump to: [Italian](#it), [French](#fr), [Chinese](#cn), [Indonesian](#id), [Japanese](#jp), [German](#de), [Russian](#ru), [Spanish](#es)  
-  
+Jump to: [Italian](#it), [French](#fr), [Chinese](#cn), [Indonesian](#id), [Japanese](#jp), [German](#de), [Russian](#ru), [Spanish](#es)
 
 ---
 

@@ -5,15 +5,15 @@ date: 2018-07-24 10:00:00 -0400
 ---
 
 Third in line, it's time for osu!mania to enter the limelight with an official beatmapping contest. Read on for details about the rules and prizes which include the Elite Mapper title and chance to be osu!mania's first Mapping Olympian!
- 
+
 [![](https://osu.ppy.sh/help/wiki/shared/news/banners/osu_mapping_olympiad.jpg)](https://osu.ppy.sh/community/contests/67)
- 
+
 We're happy to announce the arrival of a beatmapping contest for osu!mania, complete with prizes including the rare appearance of the *Elite Mapper* title. Everyone is welcome to participate; we're looking forward to how you'll try and stand out from the rest!
 
 For those who are unaware, the osu! Mapping Olympiad is a revival of official beatmapping contests, featuring a wide array of competitions ranging from traditional spreads to more unique contests to speedmapping challenges and more!
 
 To kick off osu!mania's first round of the Mapping Olympiad, we'll be adhering to the more traditional and well known style of competition we're all familiar with, but there will be more opportunities for interesting and unique takes in further iterations.
- 
+
 ## Song
 To kick off the contest, we've picked a song we believe will provide a concrete foundation for a variety of styles, made by one of our featured artists, [**Dictate**](https://osu.ppy.sh/beatmaps/artists/21)!
 
@@ -23,7 +23,7 @@ To kick off the contest, we've picked a song we believe will provide a concrete 
 </audio>
 
 Dictate's *Scavenger* is a song with a very unorthodox structure. This masterpiece of oddly syncopated synths and gritty sound is sure to give rise to many experimental interpretations from those expanding beyond the mapping meta.
- 
+
 ## Rules
 - This contest is for **osu!mania** mode with all rankable key modes (4K-9K) only.
 - Each entry must follow the **[Ranking Criteria](https://osu.ppy.sh/help/wiki/Ranking_Criteria)**. Entries that break the Ranking Criteria will be subject to penalties ranging from point deductions to disqualification based on severity.
@@ -33,7 +33,7 @@ Dictate's *Scavenger* is a song with a very unorthodox structure. This masterpie
 - Your submission must contain a full spread of 3 to 5 difficulties of the same key mode with Normal being the lowest difficulty. We will not strictly enforce the <2.00 star rating limit for the lowest difficulty.
 - Collaboration on entries is **not** permitted.
 - Maps submitted to the contest must not be uploaded with the Beatmap Submission System (BSS) until the contest is concluded and the winners announced.
- 
+
 ## Judging Criteria
 - **Musical Relevance (10 pts)**: How well the entry follows the outline of the song through rhythm choices, emphasis, and patterns.
 - **Creativity (10 pts)**: How unique and interesting the concepts and themes used are.

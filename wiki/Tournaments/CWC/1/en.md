@@ -48,7 +48,7 @@ The Catch the Beat World Cup was run by various osu!catch community members by d
 ## Links
 
 - [Discussion thread](https://osu.ppy.sh/community/forums/topics/63296)
-  
+
 -----------------------
 
 ## Participants
@@ -134,7 +134,7 @@ This competition has come to an end and resulted in the following podium:
   - [Hyadain - Hyadain no Joujou Yuujou (TV Size) (Saten-San) \[Saten's SELAMAT PAGI!!\]](https://osu.ppy.sh/beatmapsets/32775#fruits/112586)
   - [DJ Sharpnel - Exciting Hyper Highspeed Star (xBubu) \[Highspeed\]](https://osu.ppy.sh/beatmapsets/16619#fruits/62589)
   - [Level 70 Elite Tauren Chieftain - I Am Murloc (CheeseWarlock) \[Northrend\]](https://osu.ppy.sh/beatmapsets/12030#fruits/45433)
-  
+
 ### Round 5
 
 - NoMod

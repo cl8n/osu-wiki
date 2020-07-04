@@ -114,7 +114,7 @@ This competition has come to an end and resulted in the following podium:
   - [xelloscope - Apollo (inteliser) \[UNLIMITED\]](https://osu.ppy.sh/beatmapsets/727736#mania/1536569)
   - [Moe Shop w/ Ace Hashimoto - Natural (Percyqaz) \[going back for the gold\]](https://osu.ppy.sh/beatmapsets/784021#mania/1646203)
   - [Graham Kartna - chiltonWALK.temp (Nivrad00) \[Challenge\]](https://osu.ppy.sh/beatmapsets/1010184#mania/2114659)
-- Tiebreaker  
+- Tiebreaker
   - **[Quarks (kradness x Camellia) - Intro + Dualive (Evening) \[backpropogation\_edit\]](https://osu.ppy.sh/beatmapsets/996757#mania/2116122)**
 
 ### Finals

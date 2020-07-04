@@ -295,7 +295,7 @@ Notice: Beatmap scoring is based on **Score V2**.
 - **It is our right as the MXB staff to reprimand users for intolerable behavior.**
   - We will have sole discretion over decisions that affect your standing in the tournament; however, other members of tournament staff may forward any information to me that in any way represents uncalled for behavior towards other users or staff in my tournament. I will attempt to escalate serious situations beyond the scope of this event if need be, so be respectful.
   - Minor instances will receive warnings, and continued instances will result in forceful removal from the tournament.
-  
+
 #### Warm-up Songs
 
 - Each player in the match will be allowed one warm-up song to be played, making for two warm-ups in total between both players.

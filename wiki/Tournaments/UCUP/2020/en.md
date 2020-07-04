@@ -101,7 +101,7 @@ Sunday, 5 July 2020:
 | :-: | --: | :-- | :-- |
 | L13¹ | Winner of L11 | Winner of L12 | **20:00** |
 
-¹ Encounter dependent on winner of Match L11 and Match L12  
+¹ Encounter dependent on winner of Match L11 and Match L12
 
 ## Mappools
 

@@ -101,7 +101,7 @@ The **Aus/NZ osu!standard Tournament 5 - Summer** (***ANZT 5S***) was a double e
   - [Aimer - twoface (HalfDeckOfCards) \[Sorrowful\]](https://osu.ppy.sh/b/1278365)
 - Tiebreaker
   - **[Demetori - Kuuchuu ni Shizumu Kishinjou \~ Counter-Clock World (GoldenWolf) \[Extra Stage\]](https://osu.ppy.sh/b/779179)**
-  
+
 ### Semifinals & Losers Bracket Rounds 7 & 8
 
 **[Download the map pack here! (117 MB)](http://www.mediafire.com/file/7x9o4gaga0zpfkj/ANZT5S%20SF%20Mappool.zip)**
@@ -335,7 +335,7 @@ Results of the main bracket can be found on the Challonge page linked above.
 | Round of 16 & Losers Bracket Rounds 3 & 4, Quarterfinals & Losers Bracket Rounds 5 & 6 | Win five maps (Best-of-9) |
 | Semi-finals & Losers Bracket Rounds 7 & 8 | Win six maps (Best-of-11) |
 | Finals - Week 1 & 2 | Win seven maps (Best-of-13) |
-  
+
 [flag_AU]: /wiki/shared/flag/AU.gif
 [flag_NZ]: /wiki/shared/flag/NZ.gif
 [flag_US]: /wiki/shared/flag/US.gif

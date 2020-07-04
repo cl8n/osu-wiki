@@ -220,7 +220,7 @@ The osu!catch World Cup 2018 was run by various community members by distributin
 - HardRock
   - [OLDCODEX - Dried Up Youthful Fame \(TV Size\) \(RoseusJaeger\) \[Collab Platter\]](https://osu.ppy.sh/beatmapsets/544889#fruits/1154583)
   - [Horie Yui - Asymmetry \(Ascendance\) \[Collab Platter\]](https://osu.ppy.sh/beatmapsets/414949#fruits/899608)
-  - [MinusP - Shura no Niwa \(wantuole\) \[Hard\]](https://osu.ppy.sh/beatmapsets/98233#fruits/264701)  
+  - [MinusP - Shura no Niwa \(wantuole\) \[Hard\]](https://osu.ppy.sh/beatmapsets/98233#fruits/264701)
 - DoubleTime
   - [senya - Kachou Fuugetsu \(- Magic Girl -\) \[Benny's Platter\]](https://osu.ppy.sh/beatmapsets/726596#fruits/1533955)
   - [Nightwish - Last Of The Wilds \(BoberOfDarkness\) \[Platter\]](https://osu.ppy.sh/beatmapsets/321999#fruits/717056)
@@ -466,7 +466,7 @@ The osu!catch World Cup 2018 was run by various community members by distributin
 3. Each mappool consists of 16 maps in total.
 4. Each mappool has one tiebreaker.
 5. The NoMod bracket will be played with no mods activated.
-6. The Hidden, HardRock and DoubleTime bracket will be played with the respective modes activated.  
+6. The Hidden, HardRock and DoubleTime bracket will be played with the respective modes activated.
    - When playing a map from the HardRock or DoubleTime pool, Hidden can be used optionally by any player.
 7. The tiebreaker will be played under NoMod conditions.
 8. There will be 6 maps in the NoMod bracket for all stages.

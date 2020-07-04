@@ -158,9 +158,9 @@ He does not hide his technical prowess in this chart. In this chart, Daikyi stri
 *written by [Shoegazer](https://osu.ppy.sh/users/2520707)*
 
 Someone told me that we didn't have enough Camellia in the more recognised sections of osu!mania. I don't know if what he said is facetious or not, but here is another Camellia chart anyway.
- 
+
 [Lude](https://osu.ppy.sh/users/6974536) has been charting for a few years, but he is a charter that I feel is overlooked by many. He gets his first ever nominated chart with [In Black & White](https://osu.ppy.sh/beatmapsets/560464), a chart that nicely displays the modern charting meta today. The chart and song choice seems to be heavily inspired by charts such as [Glitch Nerds](https://osu.ppy.sh/beatmapsets/462748) and [PLANET//SHAPER](https://osu.ppy.sh/beatmapsets/376293); charts that utilise both heavy layering and heavy SV usage, but Lude throws in his own flair with very tasteful LN usage to complement the chart's already hectic structure. What you get is a chart that is not only memorable in its splendour, but also intricate in its approach.
- 
+
 Given the popularity of the aforementioned charts, there is going to be a considerable demand for charts like In Black & White. Tie that with the fact that In Black & White is solidly done, and it makes this chart a solid contender for the Loved section.
 
 [![](/wiki/shared/news/2018-03-13-project-loved-week-of-march-11th/mania/ooi.jpg)](https://osu.ppy.sh/community/forums/topics/715066)
@@ -184,9 +184,9 @@ Have you really met your match?
 *written by [Shoegazer](https://osu.ppy.sh/users/2520707)*
 
 Stepmania? Stepmania.
- 
+
 Despite the highest difficulty being primarily used as a benchmark to assess a player's streaming ability, [hi19hi19](https://osu.ppy.sh/users/1014473)'s [Trickstarz](https://osu.ppy.sh/beatmapsets/349432) mapset has simple yet sound structures to go with their viability for skill assessment. The highest difficulty has blistering fast streams clocking at 354 BPM 1/4s (23.6 notes per second!) that only get longer as the song progresses complemented with chordjack patterns that are very prone to error. While the chart is certainly challenging, simplicity is very much beauty here; I see many players coming back to it due to how straight-forward and rewarding the chart can be.
- 
+
 Is the highest difficulty too difficult for you? That's no problem. There are 2 other difficulties present in the set, and those two difficulties have a similarly simple structure, albeit with slower streams and 1/4 patterns, which I am sure lower-level players will enjoy.
 
 [![](/wiki/shared/news/2018-03-13-project-loved-week-of-march-11th/mania/angelic-party.jpg)](https://osu.ppy.sh/community/forums/topics/715069)

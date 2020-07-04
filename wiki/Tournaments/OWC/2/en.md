@@ -115,7 +115,7 @@ The osu! World Cup #2 was run by various community members by distributing the m
     - **[Loathing in Las Vegas - Just Awake \[Insane\]](https://osu.ppy.sh/beatmaps/139446)**
 
 ### Semifinals
-    
+
 - NoMod:
     - [Seiryu - Time to Air \[DaRRi MIx\]](https://osu.ppy.sh/beatmaps/24594)
     - [Atoguru - Itoshi Kimi wo Mitsuke ni \[Insane\]](https://osu.ppy.sh/beatmaps/96523)
