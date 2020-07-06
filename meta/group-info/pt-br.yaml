@@ -1,3 +1,4 @@
+test: test
 outdated: true # missing alumni.roles.tournaments, languages.ur, languages.vi, languages.hr, languages.bn
 separator: ", "
 alumni:
