@@ -32,7 +32,7 @@ tags:
 
 <!-- lint enable heading-increment no-missing-blank-lines table-cell-padding table-pipes -->
 
-::{ flag=KR }:: **[sayonara-bye](https://osu.ppy.sh/users/713266)** (previously **dragonhuman**) is an [osu!](/wiki/Game_mode/osu!) player, former rank
+::{ flag=KR }:: **[sayonara-bye](https://osu.ppy.sh/users/713266)** (previously **dragonhuman**) is an [osu!](/wiki/Game_mode/osu!) player, and a lot of other things but i didnt finish writing this sentence blablablablablablaal
 
 ## References
 
