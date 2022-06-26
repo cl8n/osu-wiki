@@ -41,7 +41,9 @@ In addition to the above, the [account support team](Account_support_team) is th
 
 ## User groups
 
-The following are user groups which are made up of the osu! community members that help maintain osu!. Most of these user groups can be recognised by their forum colours, in-game chat colours, profile titles, and/or profile badges.
+*Main page: [Group](/wiki/Community/Group)*
+
+The following are [user groups](/wiki/Community/Group) which are made up of the osu! community members that help maintain osu!. Most of these user groups can be recognised by their [forum colours](/wiki/Community/User_colour#forum), [in-game chat colours](/wiki/Community/User_colour#chat), [profile titles](/wiki/Community/User_title), and/or [profile badges](/wiki/Community/Profile_badge).
 
 | Name | Description |
 | :-- | :-- |
