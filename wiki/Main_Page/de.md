@@ -15,6 +15,8 @@ Willkommen zum osu!-Wiki. Ein Projekt, das eine große Reichweite an osu!-basier
 
 Wichtige Artikel und Tutorials, die dir dabei helfen, in die Welt von osu! einzutauchen. Wenn etwas unklar ist, besuche unbedingt das [Hilfeforum](https://osu.ppy.sh/forum/5).
 
+__Catch me if you can!__
+
 [Regeln](/wiki/Rules) • [Installation](/wiki/Client/Installation) • [Registrierung](/wiki/Registration) • [Hilfe-Center](/wiki/Help_centre)
 
 [Chat-Konsole](/wiki/Client/Interface/Chat_console) • [BanchoBot](/wiki/BanchoBot) • [FAQ](/wiki/FAQ) • [Tutorials](/wiki/Guides) • [Glossar](/wiki/Glossary)

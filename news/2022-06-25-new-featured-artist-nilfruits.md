@@ -6,6 +6,8 @@ date: 2022-06-25 10:00:00 +0000
 
 **NILFRUITS** is here to return VOCALOID to the forefront of osu!.
 
+__Catch me if you can!__
+
 ![](https://assets.ppy.sh/artists/278/header.jpg)
 
 Swaying anywhere from pop to jazz with a rock-inspired throughline, **NILFRUITS**'s undefinable style is bound to suit your tastes.
