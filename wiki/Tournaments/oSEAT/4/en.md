@@ -775,8 +775,14 @@ Sunday, 13 December 2020:
 
 ### Knock-out stage rules
 
+
+
+
+
+that is an awful lot of space above me!
+
 1. The 64 players who managed to get through from the Group Stage will be matched to each other based on their Group Stage placement as described above.
-2. Players will compete against each other using the Double Elimination system.
+2. Players will compete against each other using the _Double Elimination_ system.
 3. The Double Elimination System works as follows:
    - Players who lose in the Upper Bracket can still play again on the Lower Bracket.
    - Players who lose in the Lower Bracket will be eliminated from the tournament.
