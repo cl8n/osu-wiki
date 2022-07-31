@@ -1,6 +1,6 @@
 ---
 outdated_translation: true
-outdated_since: de80497e3887e708fa8ea709cf48cd5fa0efb49a
+outdated_since: 4ea31720b960328c2bd3a2bee2592759a4b7e1cf
 no_native_review: true
 tags:
   - estándares de la wiki
