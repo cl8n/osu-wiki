@@ -6,7 +6,7 @@ outdated: true
 
 # Tournament drawings
 
-The tournament drawings screen is used to livestream the sorting of teams into groups that will compete in the group stages for a tournament. It is only available in [osu!(lazer)](/wiki/Client/Release_stream/Lazer).
+The tournament drawings screen is used to livestream the sorting of teams into groups that will compete in the group stages for a tournament. It is only available in [osu!(lazer)  ](/wiki/Client/Release_stream/Lazer).
 
 Please note that the osu!(lazer) client is currently under development and there may be bugs.
 
@@ -51,7 +51,7 @@ Open the file and observe the format — this is where the results of the drawin
 
 **Please make sure to save the `drawings_results.txt` file in a safe location before pressing the Reset button, otherwise it will be destroyed!**
 
-### Configuration
+### Configuration.
 
 A tournament may not desire as many as 8 groups, and likewise may not desire 8 teams per group. The `drawings.ini` file is a configuration file that allows the adjustment of such properties.
 A valid configuration file looks like:
