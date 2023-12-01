@@ -6,17 +6,15 @@ on:
       - opened
 
 jobs:
-  welcome-new-contributor:
+  welcome-new-contributors:
+    name: Welcome new contributors
     runs-on: ubuntu-latest
     steps:
-      - name: Greet the contributor
-        uses: garg3133/welcome-new-contributors@v1.2
+      - uses: actions/first-interaction@v1.2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           pr-message: |
-            Thank you for contributing to the osu! wiki.
-
-            Please take note of the following:
+            Thanks for contributing! Please take note of the following:
 
             - Make sure you've read [this self-check checklist](https://osu.ppy.sh/wiki/osu%21_wiki/Contribution_guide#self-check).
             - Translations that have not been reviewed by a native speaker will be merged after a minimum of 1 week. If there are no reviewers for your language, please mention it explicitly.
