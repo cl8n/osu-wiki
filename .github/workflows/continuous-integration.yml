@@ -22,6 +22,12 @@ jobs:
       - name: create master branch from remote master
         run: git branch master origin/master
 
+      - name: test
+        run: |
+          git branch -a
+
+          git log master..
+
       - name: detect changed files
         run: |
           changed_files="$(mktemp)"
