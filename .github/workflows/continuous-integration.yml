@@ -28,31 +28,31 @@ jobs:
           git diff --diff-filter=d --name-only --no-renames master >"$temp_file"
           printf 'CHANGED_FILES=%s\n' "$temp_file" >>"$GITHUB_ENV"
 
-      # - name: check file sizes
-      #   run: xargs -r meta/check-file-sizes.sh <"$CHANGED_FILES"
+      - name: check file sizes
+        run: xargs -r meta/check-file-sizes.sh <"$CHANGED_FILES"
 
-      # - id: setup-node
-      #   uses: actions/setup-node@v4
-      #   with:
-      #     cache: npm
-      #     node-version: 20
+      - id: setup-node
+        uses: actions/setup-node@v4
+        with:
+          cache: npm
+          node-version: 20
 
-      # - name: load node_modules from cache
-      #   id: cache-node-modules
-      #   uses: actions/cache@v3
-      #   with:
-      #     path: node_modules
-      #     key: node-modules-${{ hashFiles('package-lock.json') }}-${{ steps.setup-node.outputs.node-version }}
+      - name: load node_modules from cache
+        id: cache-node-modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('package-lock.json') }}-${{ steps.setup-node.outputs.node-version }}
 
-      # - name: "if cache is outdated: install node.js dependencies"
-      #   if: steps.cache-node-modules.outputs.cache-hit != 'true'
-      #   run: npm ci
+      - name: "if cache is outdated: install node.js dependencies"
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: npm ci
 
-      # - name: run remark on changed files
-      #   if: ${{ !contains(github.event.pull_request.body, 'SKIP_REMARK') }}
-      #   run: |
-      #     grep '\.md$' <"$CHANGED_FILES" | \
-      #     REPORTER=vfile-reporter-github-action xargs -r meta/remark.sh
+      - name: run remark on changed files
+        if: ${{ !contains(github.event.pull_request.body, 'SKIP_REMARK') }}
+        run: |
+          grep '\.md$' <"$CHANGED_FILES" | \
+          REPORTER=vfile-reporter-github-action xargs -r meta/remark.sh
 
       - name: set up Python
         uses: actions/setup-python@v4
@@ -64,12 +64,12 @@ jobs:
       - name: set up Python CI dependencies
         run: pip install -r requirements.txt
 
-      # - name: run yamllint on .yaml and .md files
-      #   run: osu-wiki-tools check-yaml
+      - name: run yamllint on .yaml and .md files
+        run: osu-wiki-tools check-yaml
 
-      # - name: find broken wikilinks
-      #   if: ${{ !contains(github.event.pull_request.body, 'SKIP_WIKILINK_CHECK') }}
-      #   run: osu-wiki-tools check-links --all
+      - name: find broken wikilinks
+        if: ${{ !contains(github.event.pull_request.body, 'SKIP_WIKILINK_CHECK') }}
+        run: osu-wiki-tools check-links --all
 
       - name: check if translations are marked as outdated
         if: ${{ !contains(github.event.pull_request.body, 'SKIP_OUTDATED_CHECK') }}
