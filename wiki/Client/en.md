@@ -24,4 +24,4 @@ Index page for articles about the osu! game client and its main sections.
 
 - [File formats](File_formats)
 - [Program files](Program_files)
-- test
+- _test_
