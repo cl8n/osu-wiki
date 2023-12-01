@@ -31,7 +31,7 @@ jobs:
       - name: check file sizes
         run: xargs -r meta/check-file-sizes.sh <"$CHANGED_FILES"
 
-        id: setup-node
+      - id: setup-node
         uses: actions/setup-node@v4
         with:
           cache: npm
