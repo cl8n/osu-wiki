@@ -15,12 +15,14 @@ jobs:
     name: changed files
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: detect changed files
         run: |
+          git branch -a
+
           temp_file="$(mktemp)"
 
           git diff --diff-filter=d --name-only --no-renames master >"$temp_file"
@@ -29,9 +31,8 @@ jobs:
       - name: check file sizes
         run: xargs -r meta/check-file-sizes.sh <"$CHANGED_FILES"
 
-      - name: set up Node.js
         id: setup-node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           cache: npm
           node-version: 20
