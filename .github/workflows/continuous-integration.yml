@@ -19,10 +19,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - run: git branch -f master origin/master
+
       - name: detect changed files
         run: |
-          git branch -a
-
           temp_file="$(mktemp)"
 
           git diff --diff-filter=d --name-only --no-renames master >"$temp_file"
